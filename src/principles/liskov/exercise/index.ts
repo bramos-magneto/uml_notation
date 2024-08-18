@@ -1,4 +1,6 @@
 import { BadPenguinExercise } from "./penguinExercise.bad.class";
+import { Penguin } from "./solution/penguin.class";
+import { Sparrow } from "./solution/sparrow.class";
 import { BadSparrowExercise } from "./sparrowExercise.bad.cladd";
 
 /**
@@ -17,4 +19,11 @@ export const exercise = () => {
   const badSparrow = new BadSparrowExercise();
   badPenguin.fly();
   badSparrow.fly();
+
+  const penquin = new Penguin();
+  const sparrow = new Sparrow();
+  penquin.walk();
+  sparrow.walk();
+  sparrow.fly();
+  penquin.swim();
 };
